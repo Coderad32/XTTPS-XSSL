@@ -122,7 +122,7 @@ if __name__ == "__main__":
 x.com/coderad32 -> follow for more documents like this one.
 
 ---
-## Upgraded Version of orgininal Text DATA
+## Upgraded Version of orgin Text DATA org
 ## Overview: XTTPS / XSSL Custom Protocols
 
 The **XTTPS** and **XSSL** protocols are experimental, custom-designed security communication layers intended to provide a foundation for secure data transmission, certification, and authentication. These protocols conceptually mirror traditional **HTTPS** and **SSL/TLS**, but introduce new mechanisms tailored for custom security certification frameworks.
