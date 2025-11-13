@@ -1,0 +1,16 @@
+[08:00:00] [INFO] XTTP Session initialized for client_id=client-12345
+[08:00:01] [SEND] Client Hello → Headers: {X-Client-Hello, X-Timestamp}
+[08:00:01] [RECV] Server Hello ← Session ID: session-abcde12345
+[08:00:02] [INFO] Handshake complete. Secure channel established.
+
+[08:00:03] [SEND] Certificate presented by client-12345
+[08:00:03] [INFO] Certificate valid. Issuer: XSSL-CA
+
+[08:00:05] [SEND] Encrypted packet sent
+[08:00:05] [INFO] Payload: gAAAAABlYz...
+
+[08:00:06] [RECV] Encrypted response received
+[08:00:06] [INFO] Decrypted payload: {"status": "OK", "message": "Session active"}
+
+[08:01:00] [INFO] Session timeout threshold reached
+[08:01:01] [INFO] Session session-abcde12345 terminated

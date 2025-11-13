@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2025-11-13T08:00:01Z",
+    "direction": "outbound",
+    "type": "handshake",
+    "headers": {
+      "X-Client-Hello": "Hello from client-12345",
+      "X-Timestamp": "2025-11-13T08:00:01Z"
+    },
+    "payload": ""
+  },
+  {
+    "timestamp": "2025-11-13T08:00:01Z",
+    "direction": "inbound",
+    "type": "handshake_response",
+    "headers": {
+      "X-Server-Hello": "session-abcde12345",
+      "X-Timestamp": "2025-11-13T08:00:01Z"
+    },
+    "payload": ""
+  },
+  {
+    "timestamp": "2025-11-13T08:00:03Z",
+    "direction": "outbound",
+    "type": "certificate",
+    "headers": {
+      "X-Session-ID": "session-abcde12345",
+      "X-Timestamp": "2025-11-13T08:00:03Z"
+    },
+    "payload": "{...certificate_sample.json...}"
+  },
+  {
+    "timestamp": "2025-11-13T08:00:05Z",
+    "direction": "outbound",
+    "type": "data",
+    "headers": {
+      "X-Session-ID": "session-abcde12345",
+      "X-Timestamp": "2025-11-13T08:00:05Z"
+    },
+    "payload": "gAAAAABlYz..."
+  },
+  {
+    "timestamp": "2025-11-13T08:00:06Z",
+    "direction": "inbound",
+    "type": "data_response",
+    "headers": {
+      "X-Session-ID": "session-abcde12345",
+      "X-Timestamp": "2025-11-13T08:00:06Z"
+    },
+    "payload": "gAAAAABlYz... (encrypted response)"
+  }
+]
