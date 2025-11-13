@@ -12,7 +12,27 @@ This is the example of XTTPS / XSSL
 application/script used for reading only
 doesnt have a runtime yet working on it.
 
+```
 
+xttps-xssl-suite/
+├── runtime/              # XTTPS session manager and protocol handler
+│   ├── xttps_core.py     # Session lifecycle, handshake, packet parsing
+│   └── xttp_headers.py   # Custom header definitions and validation
+├── crypto/               # Cryptographic primitives and benchmarking
+│   ├── primitives.py     # Hashing, signing, encryption
+│   └── tests/            # Reliability and performance tests
+├── certs/                # XSSL certificate authority logic
+│   ├── issuer.py         # Decentralized or custom CA logic
+│   ├── verifier.py       # Certificate chain validation
+│   └── schema.json       # Certificate format definition
+├── tools/                # Debugging and test utilities
+│   ├── test_runner.py    # CLI test suite runner
+│   └── packet_inspector.py # Visualize and decode session traffic
+├── docs/                 # Developer documentation and integration guides
+│   └── README.md         # This file
+└── examples/             # Sample configs and protocol flows
+
+```
 ```perl
 
 import urllib.parse
