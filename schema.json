@@ -9,3 +9,15 @@
   },
   "required": ["subject", "issuer", "valid_from", "valid_to", "signature"]
 }
+
+// # 
+// # Update Example Upgrade: v2.0.0json
+// #
+
+{
+  "subject": "CN=Cody Bunnell, O=Top Code, OU=Protocol Dev, C=US",
+  "issuer": "CN=Mars Preserve Foundation Root CA, O=MPF, C=US",
+  "valid_from": "2025-11-16T00:00:00Z",
+  "valid_to": "2026-11-16T23:59:59Z",
+  "signature": "a9f3c8d7e2b1f4a6c3d8e9f0b7a6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8"
+}

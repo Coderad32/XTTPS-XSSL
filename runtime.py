@@ -64,3 +64,48 @@ if __name__ == "__main__":
         headers={"Content-Type": "application/json"},
         payload='{"data":"Hello XTTPS"}'
     )
+
+#
+# # Alternative simplified implementation focusing on core logic
+#
+
+
+
+import json
+import logging
+
+# Setup basic logging
+logging.basicConfig(level=logging.INFO)
+
+def handle_custom_protocol(url, method="GET", headers=None, payload=None):
+    """
+    Simulates handling a custom XTTPS/XSSL protocol request.
+    """
+    logging.info(f"Handling {method} request to {url}")
+    
+    # Validate protocol
+    if not url.startswith("xttps://"):
+        raise ValueError("Invalid protocol. Expected 'xttps://'")
+
+    # Simulate header parsing
+    headers = headers or {}
+    logging.debug(f"Headers: {headers}")
+
+    # Simulate payload processing
+    if payload:
+        try:
+            data = json.loads(payload)
+            logging.info(f"Payload parsed: {data}")
+        except json.JSONDecodeError:
+            logging.error("Invalid JSON payload")
+            return {"status": "error", "message": "Malformed JSON"}
+
+    # Simulate response
+    response = {
+        "status": "success",
+        "code": 200,
+        "message": f"{method} request to {url} processed.",
+        "echo": data if payload else None
+    }
+    logging.info(f"Response: {response}")
+    return response
